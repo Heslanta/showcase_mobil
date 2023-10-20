@@ -10,7 +10,7 @@ import {
 import { fetchCars } from "@/utils";
 import { fuels, yearsOfProduction } from "@/constants";
 
-export default async function Home({ searchParams }) {
+export default async function Home({ searchParams }: any) {
   const allCars = await fetchCars({
     // dari hasil searchparams yang dari url nanti akan menampilkan mobil seperti ini, tetapi jika tidak ada akan diberikan default
     manufacturer: searchParams.manufacturer || "",
