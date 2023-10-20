@@ -10,6 +10,16 @@ export interface CustomButtonProps {
   isDisabled?: boolean;
 }
 
+export interface CustomFilterProps {
+  title: string;
+  // disini akan membuat interface didalam interfacenya
+  options: OptionProps[];
+}
+
+export interface OptionProps {
+  title: string;
+  value: string;
+}
 export interface SearchManufacturerProps {
   manufacturer: string;
   setManufacturer: (manufacturer: string) => void;
@@ -28,4 +38,16 @@ export interface CarProps {
   model: string;
   transmission: string;
   year: number;
+}
+export interface FilterProps {
+  manufacturer: string;
+  model: string;
+  year: number;
+  fuel: string;
+  limit: number;
+}
+
+export interface ShowMoreProps {
+  pageNumber: number;
+  isNext: boolean;
 }

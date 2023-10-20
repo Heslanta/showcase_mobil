@@ -103,7 +103,7 @@ const CarDetails = ({ IsOpen, closeModal, car }: CarDetailsProps) => {
                         {/* disini menggunakan object entries untuk mengambil semua key dan value pada property car */}
                         {/* yang sebelumnya sudah dideklarasikan pada bagian atas dari carprops */}
                         {Object.entries(car).map(([key, value]) => (
-                          <div className="flex justify-between gap-5 w-full text-right">
+                          <div className="flex justify-between gap-5 w-full text-right capitalize">
                             <h4 className="text-grey capitalize">
                               {key.split("_").join(" ")}
                             </h4>
